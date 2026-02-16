@@ -16,7 +16,7 @@ function Hero() {
               style={{ color: '#ffffff', textDecoration: 'underline', fontWeight: '700' }}>
               Dr. Sk. Subidh Ali
             </a>.
-            I completed my BSc in CSE from E Raghvendra Rao Science College, Bilaspur (C.G.) in 2018 and my MSc in CSE from Atal Bihari Bajpayee University, Bilaspur (C.G.) in 2020.
+            I completed my BSc in Computer Science from E Raghvendra Rao Science College, Bilaspur (C.G.) in 2018 and my MSc in Computer Science from Atal Bihari Bajpayee University, Bilaspur (C.G.) in 2020.
           </p>
           <p>
             My research interests include privacy-preserving deep learning, DeepFake analysis, and adversarial machine learning.
