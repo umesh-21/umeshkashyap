@@ -13,7 +13,7 @@ function Hero() {
             I am a PhD Scholar in the Computer Science and Engineering Department at IIT Bhilai under the supervision of{' '}
             <a href="https://scholar.google.com/citations?user=BdDCoeEAAAAJ&hl=en" 
               target="_blank" rel="noopener noreferrer"
-              style={{ color: '#222', textDecoration: 'underline', fontWeight: '700' }}>
+              style={{ color: '#ffffff', textDecoration: 'underline', fontWeight: '700' }}>
               Dr. Sk. Subidh Ali
             </a>.
             I completed my BSc in CSE from E Raghvendra Rao Science College, Bilaspur (C.G.) in 2018 and my MSc in CSE from Atal Bihari Bajpayee University, Bilaspur (C.G.) in 2020.
