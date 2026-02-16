@@ -1,23 +1,38 @@
+#contact {
+  padding: 2rem;
+  text-align: center;
+}
+
 .contact-links {
-  margin-top: 20px;
   display: flex;
+  justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
-  gap: 10px;
+  margin-top: 1.5rem;
 }
 
 .contact-links a {
-  display: inline-block;
-  padding: 10px 16px;
-  background: var(--primary);
-  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
-  border-radius: 4px;
-  transition: 0.3s;
+  color: #333;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  background: #f5f5f5;
+  transition: all 0.3s ease;
 }
 
 .contact-links a:hover {
-  background: var(--accent);
+  background: #007bff;
+  color: white;
   transform: translateY(-2px);
+}
+
+.contact-links a svg,
+.contact-links a .icon {
+  font-size: 1.4rem;
 }
 
 @media (max-width: 768px) {
