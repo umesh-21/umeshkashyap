@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Academic portfolio website for Umesh Kashyap",
   "private": true,
-  "homepage": "https://umesh-21.github.io/academic-portfolio/",
+  "homepage": "https://umesh-21.github.io/portfolio-react/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^0.0.0"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
