@@ -22,6 +22,13 @@ function Publications() {
     },
     {
       category: 'conf',
+      title: 'Gradient-Guided Adversarial Patch Attack for Deep Neural Networks',
+      authors: 'Rishav Kumar, Umesh Kashyap, Sk. Subidh Ali',
+      venue: 'Security, Privacy, and Applied Cryptography Engineering, 227–245 (2026)',
+      link: 'https://link.springer.com/chapter/10.1007/978-3-032-16342-4_13'
+    },
+    {
+      category: 'conf',
       title: 'Adversarial Malware Detection',
       authors: 'Ashish Vishwakarma, Umesh Kashyap, Sk Subidh Ali',
       venue: 'International Conference on Security, Privacy, and Applied Cryptography Engineering, 277–286 (2024)',
