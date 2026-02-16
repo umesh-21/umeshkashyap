@@ -6,12 +6,11 @@ function Publications() {
 
   const publications = [
     {
-      category: 'preprint',
-      title: 'Generalized deepfake attribution',
-      authors: 'Sowdagar Mahammad Shahid, Sudev Kumar Padhi, Umesh Kashyap, Sk Subidh Ali',
-      venue: 'arXiv preprint arXiv:2406.18278 (2024)',
-      link: 'https://arxiv.org/abs/2406.18278',
-      pdf: 'https://arxiv.org/pdf/2406.18278'
+      category: 'conf',
+      title: 'Gradient-Guided Adversarial Patch Attack for Deep Neural Networks',
+      authors: 'Rishav Kumar, Umesh Kashyap, Sk. Subidh Ali',
+      venue: 'Security, Privacy, and Applied Cryptography Engineering, 227–245 (2026)',
+      link: 'https://link.springer.com/chapter/10.1007/978-3-032-16342-4_13'
     },
     {
       category: 'journal',
@@ -21,11 +20,12 @@ function Publications() {
       link: 'https://ieeexplore.ieee.org/abstract/document/10974570'
     },
     {
-      category: 'conf',
-      title: 'Gradient-Guided Adversarial Patch Attack for Deep Neural Networks',
-      authors: 'Rishav Kumar, Umesh Kashyap, Sk. Subidh Ali',
-      venue: 'Security, Privacy, and Applied Cryptography Engineering, 227–245 (2026)',
-      link: 'https://link.springer.com/chapter/10.1007/978-3-032-16342-4_13'
+      category: 'preprint',
+      title: 'De-Fake: Style based Anomaly Deepfake Detection',
+      authors: 'Sudev Kumar Padhi, Harshit Kumar, Umesh Kashyap, Sk Subidh Ali',
+      venue: 'arXiv preprint arXiv:2507.03334 (2025)',
+      link: 'https://arxiv.org/abs/2507.03334',
+      pdf: 'https://arxiv.org/pdf/2507.03334'
     },
     {
       category: 'conf',
@@ -36,11 +36,11 @@ function Publications() {
     },
     {
       category: 'preprint',
-      title: 'De-Fake: Style based Anomaly Deepfake Detection',
-      authors: 'Sudev Kumar Padhi, Harshit Kumar, Umesh Kashyap, Sk Subidh Ali',
-      venue: 'arXiv preprint arXiv:2507.03334 (2025)',
-      link: 'https://arxiv.org/abs/2507.03334',
-      pdf: 'https://arxiv.org/pdf/2507.03334'
+      title: 'Generalized deepfake attribution',
+      authors: 'Sowdagar Mahammad Shahid, Sudev Kumar Padhi, Umesh Kashyap, Sk Subidh Ali',
+      venue: 'arXiv preprint arXiv:2406.18278 (2024)',
+      link: 'https://arxiv.org/abs/2406.18278',
+      pdf: 'https://arxiv.org/pdf/2406.18278'
     }
   ];
 
