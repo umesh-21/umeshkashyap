@@ -48,6 +48,21 @@ function Publications() {
     ? publications 
     : publications.filter(pub => pub.category === filter);
 
+  // Helper function to bold "Umesh Kashyap" in author string
+  const renderAuthors = (authors) => {
+    const name = 'Umesh Kashyap';
+    const parts = authors.split(name);
+    if (parts.length === 1) {
+      return authors;
+    }
+    return parts.map((part, i) => (
+      <React.Fragment key={i}>
+        {part}
+        {i < parts.length - 1 && <strong>{name}</strong>}
+      </React.Fragment>
+    ));
+  };
+
   return (
     <section id="publications">
       <h2>Publications</h2>
@@ -73,7 +88,7 @@ function Publications() {
               </a>
             </strong>
             <br />
-            {pub.authors}
+            {renderAuthors(pub.authors)}
             <br />
             {pub.venue}
             {pub.pdf && (
