@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Experience from './components/Experience';
+import Achievements from './components/Achievements';
 import Research from './components/Research';
+import Skills from './components/Skills';
 import Publications from './components/Publications';
 import CV from './components/CV';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -37,11 +39,15 @@ function App() {
   return (
     <div className="App">
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <Hero />
-      <Research />
-      <Publications />
-      <CV />
-      <Contact />
+      <main>
+        <Hero />
+        <Research />
+        <Experience />
+        <Achievements />
+        <Skills />
+        <Publications />
+        <CV />
+      </main>
       <Footer />
     </div>
   );

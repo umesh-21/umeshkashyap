@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaBook, FaFilePdf, FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import './Publications.css';
 
 function Publications() {
@@ -48,55 +49,64 @@ function Publications() {
     ? publications 
     : publications.filter(pub => pub.category === filter);
 
-  // Helper function to bold "Umesh Kashyap" in author string
+  const getCategoryLabel = (category) => {
+    if (category === 'conf') return 'Conference';
+    if (category === 'journal') return 'Journal';
+    if (category === 'preprint') return 'Preprint';
+    return category;
+  };
+
   const renderAuthors = (authors) => {
     const name = 'Umesh Kashyap';
     const parts = authors.split(name);
-    if (parts.length === 1) {
-      return authors;
-    }
+    if (parts.length === 1) return authors;
     return parts.map((part, i) => (
       <React.Fragment key={i}>
         {part}
-        {i < parts.length - 1 && <strong>{name}</strong>}
+        {i < parts.length - 1 && <b style={{color: 'var(--accent-color)'}}>{name}</b>}
       </React.Fragment>
     ));
   };
 
   return (
     <section id="publications">
-      <h2>Publications</h2>
+      <h2><FaBook /> Publications</h2>
       
-      <div className="filter-buttons">
-        {['all', 'conf', 'journal', 'preprint'].map(cat => (
-          <button
-            key={cat}
-            className={`filter-btn ${filter === cat ? 'active' : ''}`}
-            onClick={() => setFilter(cat)}
-          >
-            {cat.charAt(0).toUpperCase() + cat.slice(1)}
-          </button>
-        ))}
+      <div className="filter-wrapper">
+        <div className="filter-buttons">
+          {['all', 'conf', 'journal', 'preprint'].map(cat => (
+            <button 
+              key={cat}
+              className={`filter-btn ${filter === cat ? 'active' : ''}`} 
+              onClick={() => setFilter(cat)}
+            >
+              {cat === 'all' ? 'All' : getCategoryLabel(cat)}
+            </button>
+          ))}
+        </div>
       </div>
 
-      <div className="publications-list">
+      <div className="pub-list">
         {filteredPublications.map((pub, index) => (
-          <div className="publication" key={index}>
-            <strong>
-              <a href={pub.link} target="_blank" rel="noopener noreferrer">
-                {pub.title}
-              </a>
-            </strong>
-            <br />
-            {renderAuthors(pub.authors)}
-            <br />
-            {pub.venue}
-            {pub.pdf && (
-              <>
-                {' '}
-                [<a href={pub.pdf} target="_blank" rel="noopener noreferrer">PDF</a>]
-              </>
-            )}
+          <div className="pub-item" key={index}>
+            <div className="pub-tag">{getCategoryLabel(pub.category)}</div>
+            <div className="pub-content">
+              <h3 className="pub-title">
+                <a href={pub.link} target="_blank" rel="noopener noreferrer">{pub.title}</a>
+              </h3>
+              <div className="pub-authors">{renderAuthors(pub.authors)}</div>
+              <div className="pub-venue">{pub.venue}</div>
+              <div className="pub-actions">
+                <a href={pub.link} className="pub-link" target="_blank" rel="noopener noreferrer">
+                  <FaArrowUpRightFromSquare /> DOI
+                </a>
+                {pub.pdf && (
+                  <a href={pub.pdf} className="pub-link" target="_blank" rel="noopener noreferrer">
+                    <FaFilePdf /> PDF
+                  </a>
+                )}
+              </div>
+            </div>
           </div>
         ))}
       </div>

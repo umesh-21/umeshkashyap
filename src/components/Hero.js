@@ -1,31 +1,96 @@
 import React from 'react';
+import { 
+  FaEnvelope, 
+  FaGoogle, 
+  FaGithub, 
+  FaLinkedin, 
+  FaLocationDot, 
+  FaGraduationCap, 
+  FaBuildingColumns,
+  FaShieldHalved,
+  FaMaskFace,
+  FaBrain
+} from 'react-icons/fa6';
 import './Hero.css';
 
 function Hero() {
+  const tags = [
+    { icon: <FaShieldHalved />, text: 'Privacy-Preserving AI' },
+    { icon: <FaMaskFace />, text: 'DeepFake Analysis' },
+    { icon: <FaBrain />, text: 'Adversarial ML' }
+  ];
+
   return (
     <section className="hero" id="about">
-      <div className="hero-content">
-        <div className="hero-image">
-          <img className="profile-image" src={`${process.env.PUBLIC_URL}/umesh_profile.jpg`} alt="Profile photo of Umesh Kashyap" />
-        </div>
-        <div className="hero-text">
-          <h1>Umesh Kashyap</h1>
-          <h3>PhD Scholar, Computer Science and Engineering Department</h3>
-          <p>Indian Institute of Technology Bhilai, Durg (C.G) 491002.</p>
-          <p>
-            I am a PhD Scholar in the Computer Science and Engineering Department at IIT Bhilai under the supervision of{' '}
-            <a href="https://scholar.google.com/citations?user=BdDCoeEAAAAJ&hl=en" 
-              target="_blank" rel="noopener noreferrer"
-              style={{ color: '#ffffff', textDecoration: 'underline', fontWeight: '700' }}>
-              Dr. Sk. Subidh Ali
-            </a>.
-            I completed my BSc in Computer Science from E. Raghvendra Rao P.G. Science College, Bilaspur (C.G.) in 2018 and MSc in Computer Science from Atal Bihari Vajpayee University, Bilaspur (C.G.) in 2020.
-          </p>
-          <p>
-            My research interests include privacy-preserving deep learning, DeepFake analysis, and adversarial machine learning.
-          </p>
+      <div className="hero-grid">
+        <div className="profile-wrapper">
+          <div className="profile-card">
+            <img 
+              className="profile-image" 
+              src={`${process.env.PUBLIC_URL}/umesh_profile.jpg`} 
+              alt="Umesh Kashyap" 
+            />
+          </div>
         </div>
         
+        <div className="hero-content">
+          <header className="hero-header">
+            <h1>Umesh Kashyap</h1>
+            <h3 className="hero-subtitle">PhD Scholar, Computer Science & Engineering</h3>
+          </header>
+          
+          <div className="hero-bio">
+            <p>
+              I am a <b>PhD Scholar</b> at the Indian Institute of Technology Bhilai, 
+              working under the mentorship of <a href="https://scholar.google.com/citations?user=BdDCoeEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Sk. Subidh Ali</a>.
+              My research focuses on building <b>secure, robust, and privacy-preserving</b> intelligent systems.
+            </p>
+            <p>
+              I hold an MSc in Computer Science from Atal Bihari Vajpayee University (2020) 
+              and a BSc from E. Raghvendra Rao P.G. Science College (2018).
+            </p>
+          </div>
+
+          <div className="info-list">
+            <div className="info-item">
+              <FaGraduationCap />
+              <span>Computer Science & Engineering</span>
+            </div>
+            <div className="info-item">
+              <FaBuildingColumns />
+              <span>IIT Bhilai, India</span>
+            </div>
+            <div className="info-item">
+              <FaLocationDot />
+              <span>Durg, Chhattisgarh</span>
+            </div>
+            <div className="info-item">
+              <FaEnvelope />
+              <span>umeshk@iitbhilai.ac.in</span>
+            </div>
+          </div>
+
+          <div className="social-links-minimal">
+            <a href="https://scholar.google.com/citations?user=pragXJsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+              <FaGoogle />
+            </a>
+            <a href="https://github.com/umesh-21" target="_blank" rel="noopener noreferrer" title="GitHub">
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/umesh-kashyap-491744172/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              <FaLinkedin />
+            </a>
+          </div>
+
+          <div className="hero-tags">
+            {tags.map((tag, index) => (
+              <span key={index} className="tag">
+                {tag.icon}
+                {tag.text}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
