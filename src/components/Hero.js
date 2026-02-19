@@ -5,7 +5,6 @@ import {
   FaGithub, 
   FaLinkedin, 
   FaLocationDot, 
-  FaGraduationCap, 
   FaBuildingColumns,
   FaShieldHalved,
   FaMaskFace,
@@ -23,7 +22,7 @@ function Hero() {
   return (
     <section className="hero" id="about">
       <div className="hero-grid">
-        <div className="profile-wrapper">
+        <div className="hero-profile">
           <div className="profile-card">
             <img 
               className="profile-image" 
@@ -35,7 +34,7 @@ function Hero() {
         
         <div className="hero-content">
           <header className="hero-header">
-            <h1>Umesh Kashyap</h1>
+            <h1 className="hero-name">Umesh Kashyap</h1>
             <h3 className="hero-subtitle">PhD Scholar, Computer Science & Engineering</h3>
           </header>
           
@@ -53,24 +52,20 @@ function Hero() {
 
           <div className="info-list">
             <div className="info-item">
-              <FaGraduationCap />
-              <span>Computer Science & Engineering</span>
-            </div>
-            <div className="info-item">
               <FaBuildingColumns />
               <span>IIT Bhilai, India</span>
-            </div>
-            <div className="info-item">
-              <FaLocationDot />
-              <span>Durg, Chhattisgarh</span>
             </div>
             <div className="info-item">
               <FaEnvelope />
               <span>umeshk@iitbhilai.ac.in</span>
             </div>
+            <div className="info-item">
+              <FaLocationDot />
+              <span>Durg, Chhattisgarh</span>
+            </div>
           </div>
 
-          <div className="social-links-minimal">
+          <div className="hero-social">
             <a href="https://scholar.google.com/citations?user=pragXJsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar">
               <FaGoogle />
             </a>
@@ -84,7 +79,7 @@ function Hero() {
 
           <div className="hero-tags">
             {tags.map((tag, index) => (
-              <span key={index} className="tag">
+              <span key={index} className="tag-pill">
                 {tag.icon}
                 {tag.text}
               </span>
