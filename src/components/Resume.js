@@ -15,7 +15,7 @@ function Resume() {
             My resume details my academic background, research publications, teaching experience, and technical skills.
           </p>
           <div className="resume-actions">
-            <a className="btn btn-primary" href="/umesh_resume.pdf" download="Umesh_Kashyap_Resume.pdf" aria-label="Download Resume PDF">
+            <a className="btn btn-primary" href={`${process.env.PUBLIC_URL}/umesh_kashyap_resume.pdf`} download="Umesh_Kashyap_Resume.pdf" aria-label="Download Resume PDF">
               <FaFileArrowDown /> Download PDF
             </a>
             <a className="btn btn-outline" href="https://scholar.google.com/citations?user=pragXJsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
