@@ -1,4 +1,4 @@
-.cv-container {
+.resume-container {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
@@ -9,12 +9,12 @@
   transition: all 0.3s ease;
 }
 
-.cv-container:hover {
+.resume-container:hover {
   border-color: var(--accent-color);
   box-shadow: var(--card-shadow);
 }
 
-.cv-icon-box {
+.resume-icon-box {
   font-size: 4rem;
   color: var(--accent-color);
   background: var(--bg-subtle);
@@ -26,17 +26,17 @@
   border-radius: 20px;
 }
 
-.cv-info {
+.resume-info {
   flex: 1;
 }
 
-.cv-text {
+.resume-text {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   color: var(--text-secondary);
 }
 
-.cv-actions {
+.resume-actions {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
@@ -54,14 +54,14 @@
 }
 
 @media (max-width: 768px) {
-  .cv-container {
+  .resume-container {
     flex-direction: column;
     text-align: center;
     padding: 2rem;
     gap: 2rem;
   }
 
-  .cv-actions {
+  .resume-actions {
     justify-content: center;
   }
 }

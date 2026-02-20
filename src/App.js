@@ -7,7 +7,7 @@ import Achievements from './components/Achievements';
 import Research from './components/Research';
 import Skills from './components/Skills';
 import Publications from './components/Publications';
-import CV from './components/CV';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
         <Achievements />
         <Skills />
         <Publications />
-        <CV />
+        <Resume />
       </main>
       <Footer />
     </div>

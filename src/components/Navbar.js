@@ -12,7 +12,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
     { id: 'achievements', label: 'Achievements' },
     { id: 'skills', label: 'Skills' },
     { id: 'publications', label: 'Publications' },
-    { id: 'cv', label: 'CV' }
+    { id: 'resume', label: 'Resume' }
   ];
 
   return (
