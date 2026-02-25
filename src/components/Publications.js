@@ -7,7 +7,7 @@ function Publications() {
 
   const publications = [
     {
-      category: 'journal',
+      category: 'conf',
       title: 'GAN-Invert: Unveiling Vulnerabilities in Privacy-Preserving Facial Transformations',
       authors: 'Umesh Kashyap, Sk. Subidh Ali',
       venue: 'Privacy Enhancing Technologies Symposium (PETs 2026) Issue 2',
