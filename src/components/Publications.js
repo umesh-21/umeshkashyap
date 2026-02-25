@@ -10,7 +10,7 @@ function Publications() {
       category: 'journal',
       title: 'GAN-Invert: Unveiling Vulnerabilities in Privacy-Preserving Facial Transformations',
       authors: 'Umesh Kashyap, Sk. Subidh Ali',
-      venue: 'Privacy Enhancing Technologies Symposium (PETs 2026)Issue 2',
+      venue: 'Privacy Enhancing Technologies Symposium (PETs 2026) Issue 2',
       link: 'https://petsymposium.org/2026/paperlist.php'
     },
     {
