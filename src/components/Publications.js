@@ -8,7 +8,7 @@ function Publications() {
   const publications = [
     {
       category: 'conf',
-      title: 'Doc-Protector: A Self-Healing Approach for Digital Documents',
+      title: 'The Cosine Conspiracy: Subverting CLIPure-Cos with a LatentSpace Informed Attack',
       authors: 'Umesh Kashyap, Raghav Borikar, Sudev Kumar Padhi, Sk. Subidh Ali',
       venue: 'Security, Privacy, and Applied Cryptography Engineering'
       
